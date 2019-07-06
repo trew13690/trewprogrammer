@@ -12,7 +12,7 @@ export default function Nav() {
           position="fixed"
           color="default">
               <Toolbar> <img src="../src/assets/triskele24.png" style={{ marginRight: '1rem'}}/>
-              <Grid justify="space-between" container spacing={24}>
+              <Grid justify="space-between" container >
                   <Typography
                   variant="h6"
                   color="inherit">
