@@ -5,11 +5,11 @@ import ProjectBox from '../components/projectBox';
 export default function Projects() {
   
   return (
-    <div style={{ marginTop: "15%", marginBotton: "20%" }}>
+    <div style={{ marginTop: "15%"  }}>
     
       <Typography 
-      style={{marginBottom: '2rem', textAlign: "center"}}
-       variant="h5">Portfolio</Typography>
+      style={{marginBottom: '2rem'}} 
+       variant="h4">Portfolio</Typography>
       
       <Grid 
       container 
