@@ -1,0 +1,32 @@
+.intro{
+   
+  
+    &_info-header{
+        &-container{
+            margin-top: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        margin-bottom: 2.5rem;
+        font-size: 6rem;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.5rem;
+   
+    }
+    &_info-header-2{
+        font-size: 2rem;
+        font-weight: 200;
+        color: rgb(255, 255, 255);
+        line-height: 1.5rem;
+    }
+    &_bio-text{
+        margin: 4rem auto;
+        font-weight: 300;
+        line-height: 4rem;
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+    }
+}

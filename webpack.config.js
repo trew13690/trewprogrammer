@@ -1,6 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 var path = require("path")
 
+
 module.exports = {
     entry: ["./src/app.js"],
     output: {
@@ -9,6 +10,7 @@ module.exports = {
         publicPath: "/"
 
     },
+    watch: true,
     module: {
         rules:[
             {
@@ -24,6 +26,17 @@ module.exports = {
                 }
             ]
         
+    },
+    {
+        test: /\.scss$/,
+        use: ["style-loader",
+            "css-loader",
+            "sass-loader"
+        ]
+    },
+    {
+        test: /\.(png|svg|jpg|gif)$/,
+        use:['file-loader']
     },
     ]
     },

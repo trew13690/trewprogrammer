@@ -12,24 +12,25 @@ export default function ProjectBox() {
         style={{
           minHeight: "150px",
           padding: "20px",
-          marginLeft: "15px",
-          minWidth: "500px"
+          minWidth: "500px" , 
+          marginTop: '3rem',
         }}
       >
         <CardContent>
           <Typography
-            style={{ textAlign: "center", marginBottom: '2rem' }}
+            style={{ textAlign: "center", marginBottom: '1rem' }}
             color="textSecondary"
-            gutterBottom
+           variant="h5" 
           >
             Ark Tribe Manager
           </Typography>
           <Typography>TODO - Description of project</Typography>
+          <img src='#'></img>
         </CardContent>
-        <Button variant="outlined" component="span">
+        <Button variant="contained" component="span" color="primary">
           Code
         </Button>
-        <Button style={{float: 'right'}} variant="outlined" component="span">
+        <Button style={{float: 'right'}} variant="contained" component="span" color="primary">
           Site
         </Button>
       </Card>
