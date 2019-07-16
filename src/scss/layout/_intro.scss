@@ -5,25 +5,22 @@
   min-height: 80vh;
   position: relative;
   display: flex;
-  
 
   &_info {
     display: flex;
-    
     align-items: center;
     flex-direction: column;
     flex: 1 1 50%;
-    padding: 2rem;
+    padding: 5rem;
+
     &-logo {
       margin-right: auto;
       margin-bottom: 4rem;
       flex: 0 0 10%;
-
     }
     &-logo img {
       height: 10rem;
       width: 10rem;
-      
     }
   }
   &_video {
@@ -41,19 +38,43 @@
     }
   }
 
-  &_bio {
-   display: flex;
-   flex-direction: column;
+  ////////////////////////////////////
+  // BIO
 
-    padding: 5rem;
-    flex: 0 0 50%;
-    &-profile-pic{
-      align-self: flex-end;
-      height:300px;
-      width: 300px;
-      border-radius: 50%;
+  &_bio {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    flex: 0 0 60%;
+
+    &-main {
+      display: flex;
+    }
+
+    &-profile-pic {
+      width: 20rem;
+      height: 20rem;
       border: none;
-    
+      border-radius: 50%;
+    }
+
+    &-contact-nav {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 4rem;
+  
+  
+      &-icon {
+        fill: white;
+        transition: all .3s;
+        border-radius: 50%;
+        
+        &:hover{
+          transform: translateY(-1rem) scale(1.3);
+
+        }
+      }
     }
   }
 }

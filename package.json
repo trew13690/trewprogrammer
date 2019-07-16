@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server "
+    "start": "webpack-dev-server ",
+    "svgr": "svgr -d src/Icons/ src/assets/SVG/"
   },
   "dependencies": {
     "@babel/core": "^7.4.5",
@@ -15,6 +16,7 @@
     "@material-ui/icons": "^4.2.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "global": "^4.4.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.8.6",
@@ -28,6 +30,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "devDependencies": {
+    "@svgr/cli": "^4.3.2",
     "css-loader": "^3.0.0",
     "file-loader": "^4.0.0",
     "mini-css-extract-plugin": "^0.7.0",
