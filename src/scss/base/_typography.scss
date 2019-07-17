@@ -1,7 +1,8 @@
 .intro{
-
+    text-align: center;
     &_info-header{
         &-container{
+         
             margin-top: 4rem;
             display: flex;
             flex-direction: column;
@@ -17,11 +18,11 @@
         }
     
         margin-bottom: 2.5rem;
-        font-size: 8rem;
+        font-size: 7rem;
         font-weight: 700;
         text-transform: uppercase;
         color: #fff;
-        line-height: 1.5rem;
+        line-height:7.5rem;
     
    
     }
@@ -33,6 +34,7 @@
         line-height: 1.5rem;
     }
     &_bio-text{
+
         font-size: 3rem;
         color:white;
         font-weight: 400;

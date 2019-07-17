@@ -1,21 +1,47 @@
 import React from 'react';
 import Card from '@material-ui/core/Card'
-import Typography from '@material-ui/core/Typography'
 
 export default function Skills(){
     return(
-        <div>
-            <Typography variant='h4' style={{ marginTop: '5em', marginBottom: '1rem' }}>         
-            
-            Skills                        
-           </Typography>                     
-            <Card 
-            style={{minHeight: '300px'}} 
-            >
+        <div className="skills">
+        <h4 className="skills_heading">
+            Skills
+        </h4>
+        <div className="skills_sub-container">
+            <div className="skills-skill-box">
+                <li className="skills-skill-box--list">
+                    <p className="skills-skill-box--text">
+                        Skill
+                    </p>
+                    <p className="skills-skill-box--text">
+                        Skill
+                    </p>
+                    <p className="skills-skill-box--text">
+                        Skill
+                    </p>
+                    <p className="skills-skill-box--text">
+                        Skill
+                    </p>
+                </li>
+            </div>
 
-
-
-            </Card>
+            <div className="skills-skill-box">
+                <li className="skills-skill-box--list">
+                <p className="skills-skill-box--text">
+                    Skill
+                </p>
+                <p className="skills-skill-box--text">
+                    Skill
+                </p>
+                <p className="skills-skill-box--text">
+                    Skill
+                </p>
+                <p className="skills-skill-box--text">
+                    Skill
+                </p>
+                </li>
+            </div>
+        </div>
         </div>
     )
 }
