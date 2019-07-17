@@ -11,6 +11,7 @@ function Home(){
            <Intro />
            <Skills />
            <Projects />
+           <Footer />
        </div>
     )
 }
