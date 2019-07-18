@@ -10,7 +10,7 @@ export default function Intro() {
     <div className="intro">
     <div className="intro_video">
     <video className="intro_video-content" autoPlay='true' muted loop>
-        <source src="./src/assets/video/working-it.mp4" type="video/mp4"/>
+        <source src="./src/assets/video/working.mp4" type="video/mp4"/>
     </video>
     </div>
       <div className="intro_info">
