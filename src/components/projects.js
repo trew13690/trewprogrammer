@@ -25,7 +25,8 @@ export default function Projects() {
               </div>
               
               <p className="project-section_container-project-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque iusto saepe repellendus officiis eius. Aut, itaque? Repudiandae sunt rerum quas dolor consequatur laudantium eum rem assumenda, soluta a ut repellat!
+                  Demo Project -- Used Sass with 7-1 architecture and BEM;
+                 
               </p>
               <div className="project-section_container-project-buttonContainer">
              
@@ -45,7 +46,8 @@ export default function Projects() {
               </h4>
               </div>
               <p className="project-section_container-project-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque iusto saepe repellendus officiis eius. Aut, itaque? Repudiandae sunt rerum quas dolor consequatur laudantium eum rem assumenda, soluta a ut repellat!
+                Demo Project -- Used Flexbox and Sass with 7-1 Arch and BEM;
+              
               </p>
               <div className="project-section_container-project-buttonContainer">
               <Live className="project-section_container-project-button"/>
@@ -62,7 +64,7 @@ export default function Projects() {
               </h4>
               </div>
               <p className="project-section_container-project-description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque iusto saepe repellendus officiis eius. Aut, itaque? Repudiandae sunt rerum quas dolor consequatur laudantium eum rem assumenda, soluta a ut repellat!
+                IN PROGRESS -- Ark Tribe Manager is a tool for the gaming community that plays the game Ark; 
               </p>
               <div className="project-section_container-project-buttonContainer">
               <Live className="project-section_container-project-button"/>
