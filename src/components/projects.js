@@ -1,25 +1,76 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
-import ProjectBox from '../components/projectBox';
+import NaturePhoto from '../assets/img/NatureScreenShot.jpg';
+import TrelloPhoto from '../assets/img/Trello.jpg';
+import InProgress from '../assets/img/InProgress.jpg';
+import  {Link} from 'react-router-dom';
+import Github from '../Icons/Github';
+import Live from '../Icons/Globe';
+
+
 export default function Projects() {
   
   return (
-    <div style={{ marginTop: "15%"  }}>
-    
-      <Typography 
-      style={{marginBottom: '2rem'}} 
-       variant="h4">Portfolio</Typography>
-      
-      <Grid 
-      container 
-      direction='row'
-      justify="center"
-      alignItems="center"
-      >
+    <div className="project-section">
+        <h3 className="header-3">
+          Projects
+        </h3>
 
-      <ProjectBox />
-      </Grid>
+        <div className="project-section_container">
+          <div className="project-section_container-project">
+          <div className="project-section_container-project-top">
+              <img src={NaturePhoto} alt="" className="project-section_container-project-img"/>
+              <h4 className="header-4">
+                Nature Demo 
+              </h4>
+              </div>
+              
+              <p className="project-section_container-project-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque iusto saepe repellendus officiis eius. Aut, itaque? Repudiandae sunt rerum quas dolor consequatur laudantium eum rem assumenda, soluta a ut repellat!
+              </p>
+              <div className="project-section_container-project-buttonContainer">
+             
+             
+              <Live height='30' width='25' fill='#000'className="project-section_container-project-button"/>
+              
+              <a href="https://github.com/trew13690/NaturePortfolioSample" target="_blank">
+               <Github fill='#000' width='25' height='25' className="project-section_container-project-button" />
+               </a>
+                </div>
+          </div>
+          <div className="project-section_container-project">
+           <div className="project-section_container-project-top">
+            <img src={TrelloPhoto} alt="" className="project-section_container-project-img"/>
+              <h4 className="header-4">
+                Trello  Demo
+              </h4>
+              </div>
+              <p className="project-section_container-project-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque iusto saepe repellendus officiis eius. Aut, itaque? Repudiandae sunt rerum quas dolor consequatur laudantium eum rem assumenda, soluta a ut repellat!
+              </p>
+              <div className="project-section_container-project-buttonContainer">
+              <Live className="project-section_container-project-button"/>
+              <a href="https://github.com/trew13690/Trello" target="_blank">
+                <Github className="project-section_container-project-button"/>
+                </a>
+                </div>
+          </div>
+          <div className="project-section_container-project">
+           <div className="project-section_container-project-top">
+            <img src={InProgress} alt="" className="project-section_container-project-img"/>
+              <h4 className="header-4">
+                Ark Tribe Manager
+              </h4>
+              </div>
+              <p className="project-section_container-project-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque iusto saepe repellendus officiis eius. Aut, itaque? Repudiandae sunt rerum quas dolor consequatur laudantium eum rem assumenda, soluta a ut repellat!
+              </p>
+              <div className="project-section_container-project-buttonContainer">
+              <Live className="project-section_container-project-button"/>
+
+                <Github className="project-section_container-project-button"/>
+                </div>
+          </div>
+        </div>
     </div>
   );
 }

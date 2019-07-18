@@ -1,0 +1,69 @@
+.project-section{
+background-color: rgb(233, 233, 233);
+margin-bottom: 2rem;
+padding: 2rem;
+height: 90vh;
+width: auto;
+
+&_container{
+display: flex; 
+margin-top: 5rem;
+justify-content: space-between;
+
+
+&-project{
+margin: 5rem 4rem;
+height: 66vh;
+display: flex;
+flex-direction: column;
+border: 1px solid rgba(#000, 0.5);
+
+
+&-top{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    margin: 4rem auto;
+}
+&-buttonContainer{
+display: flex;
+flex-direction:row;
+width: 100%;
+height: 5rem;
+justify-content: space-evenly;
+}
+
+&-img{
+ max-height: 250px;
+ background-size: cover;
+ margin: 2rem 2rem;
+
+}
+
+&-description{
+font-size: 2.5rem;
+font-weight: 200;
+text-align: center;
+margin: 3rem 1rem;
+
+}
+
+
+&-button{
+
+transition: all .8s;
+}
+
+&-button:hover{
+    transform: translateY(-1.1rem) scale(1.1);
+}
+
+
+}
+}
+
+
+
+
+}

@@ -10,6 +10,8 @@ function Home(){
        <div >
            <Intro />
            <Skills />
+           <Projects />
+           <Footer />
        </div>
     )
 }
