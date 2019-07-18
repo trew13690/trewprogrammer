@@ -1,27 +1,31 @@
 .project-section{
 background-color: rgb(233, 233, 233);
 margin-bottom: 2rem;
-padding: 5rem;
-height: 50rem;
+padding: 2rem;
+height: 90vh;
 width: auto;
 
 &_container{
 display: flex; 
-
+margin-top: 5rem;
 justify-content: space-between;
 
 
 &-project{
-margin: 4rem 2rem;
-height: 25rem;
+margin: 5rem 4rem;
+height: 66vh;
 display: flex;
 flex-direction: column;
-align-content: center;
-align-items: center;
-width: auto;
 border: 1px solid rgba(#000, 0.5);
-box-shadow: 0rem 1rem 3rem rgba(#eee, 0.5);
 
+
+&-top{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    margin: 4rem auto;
+}
 &-buttonContainer{
 display: flex;
 flex-direction:row;
@@ -31,6 +35,9 @@ justify-content: space-evenly;
 }
 
 &-img{
+ max-height: 250px;
+ background-size: cover;
+ margin: 2rem 2rem;
 
 }
 
@@ -44,14 +51,12 @@ margin: 3rem 1rem;
 
 
 &-button{
-border: none;
-color: white;
-margin-right: auto;
-margin-left: auto;
-padding: 2rem;
-line-height: 1rem;
-border-radius: 25%;
-box-shadow: 0rem 1rem 3rem rgba(#eee, .5);
+
+transition: all .8s;
+}
+
+&-button:hover{
+    transform: translateY(-1.1rem) scale(1.1);
 }
 
 
