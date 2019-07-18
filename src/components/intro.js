@@ -9,7 +9,7 @@ export default function Intro() {
   return (
     <div className="intro">
     <div className="intro_video">
-    <video className="intro_video-content" autoplay='true' muted loop>
+    <video className="intro_video-content" autoPlay='true' muted loop>
         <source src="./src/assets/video/working-it.mp4" type="video/mp4"/>
     </video>
     </div>
@@ -42,13 +42,18 @@ export default function Intro() {
       
       <div className="intro_bio-contact-nav">
         <li className="intro_contact-nav-list">
-       <TwitterIcon className="intro_bio-contact-nav-icon" />
+        <a href='https://twitter.com/trewred' target='_blank'>
+       <TwitterIcon width='30' height='30' className="intro_bio-contact-nav-icon" />
+       </a>
        </li>
        <li className="intro_contact-nav-list">
-       <GithubIcon className="intro_bio-contact-nav-icon"/>
+       <a href='https://github.com/trew13690' target='_blank'>
+       <GithubIcon className="intro_bio-contact-nav-icon"/></a>
        </li>
        <li className="intro_contact-nav-list">
-       <EmailIcon className="intro_bio-contact-nav-icon"/>
+       <a href="mailto: trew13690@gmail.com" target='_blank'>
+       <EmailIcon width='40' height='40' className="intro_bio-contact-nav-icon"/>
+       </a>
         </li>
       </div>
       </div>

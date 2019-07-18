@@ -30,7 +30,7 @@ export default function Projects() {
               <div className="project-section_container-project-buttonContainer">
              
              
-              <Live height='25' width='25' fill='#000'className="project-section_container-project-button"/>
+              <Live height='30' width='25' fill='#000'className="project-section_container-project-button"/>
               
               <a href="https://github.com/trew13690/NaturePortfolioSample" target="_blank">
                <Github fill='#000' width='25' height='25' className="project-section_container-project-button" />
@@ -66,7 +66,7 @@ export default function Projects() {
               </p>
               <div className="project-section_container-project-buttonContainer">
               <Live className="project-section_container-project-button"/>
-              
+
                 <Github className="project-section_container-project-button"/>
                 </div>
           </div>
