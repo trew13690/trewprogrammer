@@ -1,0 +1,95 @@
+.intro {
+  margin: 1rem auto;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 85vh;
+  position: relative;
+  display: flex;
+
+  &_info {
+    display: flex;
+    margin-top: 10rem;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 50%;
+    padding: 5rem;
+
+       &-profile-pic {
+      width: 30rem;
+      height: 30rem;
+      border: none;
+      border-radius: 50%;
+      margin-bottom: .5rem;
+    }
+    &-profile-pic:hover{
+      transform: translateY(-1rem);
+      transition: all .3s;
+    }
+
+    &-logo {
+      margin-top: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-left: 2rem;
+    }
+    &-logo img {
+      height: 10rem;
+      width: 10rem;
+    }
+    &-logo:hover img{
+     
+      transition: all .3s;
+      transform: translateY(-.5rem) scale(1.1);
+    }
+  }
+  &_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    overflow: hidden;
+    &-content {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  ////////////////////////////////////
+  // BIO
+
+  &_bio {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    flex: 0 0 60%;
+    margin-top: 15rem;
+
+    &-main {
+      display: flex;
+    }
+
+
+    
+    &-contact-nav {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 4rem;
+  
+  
+      &-icon {
+        fill: black;
+        transition: all .3s;
+        
+        &:hover{
+          transform: translateY(-1rem) scale(1.3);
+
+        }
+      }
+    }
+  }
+}
