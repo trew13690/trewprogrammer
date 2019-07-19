@@ -10,7 +10,7 @@ export default function Intro() {
     <div className="intro">
     <div className="intro_video">
     <video className="intro_video-content" autoPlay='true' muted loop>
-        <source src="./src/assets/video/working-it.mp4" type="video/mp4"/>
+        <source src="./src/assets/video/working.mp4" type="video/mp4"/>
     </video>
     </div>
       <div className="intro_info">
@@ -18,6 +18,7 @@ export default function Intro() {
           <img src={logo} alt=""/>
       </div>
       <div className="intro_info-header-container">
+        <img src={ProfilePic} alt="" className="intro_info-profile-pic" />
         <h1 className="intro_info-header" >
           Full Stack Developer
         </h1>
@@ -31,13 +32,10 @@ export default function Intro() {
       <h3 className='intro-name-header'>Alex Trew</h3>
       <div className="intro_bio-main">
         <p className="intro_bio-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem nulla
-          vero odio, aut cupiditate adipisci odit? Repellendus enim totam
-          doloremque velit, molestiae vitae, nam molestias assumenda similique
-          harum ipsa magni.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nam obcaecati,  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste qui quisquam ad eaque maiores voluptatibus voluptate a excepturi optio. Quibusdam temporibus neque similique cum totam expedita modi, sed adipisci doloremque.
+          I have an obsession! I really love everything about technology; From the blockchain to robotics, there isn't much more I need to hear then amazing things technology can do for the world; I am passionate about building tools and solutions to solve real world problems; Software is the magic of our time. Lets Build!
          </p>
      
-           <img src={ProfilePic} alt="" className="intro_bio-profile-pic" />
+         
         </div>
       
       <div className="intro_bio-contact-nav">

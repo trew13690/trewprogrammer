@@ -2,8 +2,8 @@
     text-align: center;
     &_info-header{
         &-container{
-         
-            margin-top: 4rem;
+            
+            margin-top: -12rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -30,7 +30,7 @@
         font-size: 5rem;
         font-weight:100;
         margin-top: 2rem;
-        color: rgb(255, 255, 255);
+        color: white;
         line-height: 1.5rem;
     }
     &_bio-text{
@@ -46,12 +46,12 @@
 
      &-name-header{
          transition: transform .3s;
-        font-size: 4rem;
+        font-size: 6rem;
         height: 3.5rem;
         z-index: 1;
         font-weight: 600;
         margin:2rem auto;
-        color: white;
+        color:white;
         text-transform:  uppercase;
         text-shadow: 0rem 2rem 1rem rgba(#000, .5);
   }
@@ -65,13 +65,17 @@
 .header-3{
     text-align: center;
     margin: 2rem auto;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 3rem;
    
     color: white;
     text-transform: uppercase;
-    text-shadow: 0rem 1rem 1rem rbga(#000, 0.4);
+   text-shadow: 0rem 1rem 1rem rgba(#000, .4);
 
+}
+.header-3:hover{
+    transform: translateY(-1rem) scale(1.1);
+    transition: all .5s;
 }
 
 .header-4{
