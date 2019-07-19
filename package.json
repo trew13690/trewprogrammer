@@ -16,14 +16,15 @@
     "@material-ui/icons": "^4.2.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "global": "^4.4.0",
+
+
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.12.0",
     "react-router-dom": "^5.0.1",
-    "react-uid": "^2.2.0",
+
     "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
