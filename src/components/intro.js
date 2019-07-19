@@ -1,5 +1,4 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import logo from '../assets/img/logo.png';
 import ProfilePic from '../assets/img/Profile.jpg';
 import TwitterIcon from '../Icons/Twitter';

@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "@material-ui/core/Card";
 import IconHtml from "../Icons/Html5";
 import IconJava from "../Icons/Java";
 import IconPython from "../Icons/Python";
