@@ -18,6 +18,7 @@ export default function Intro() {
           <img src={logo} alt=""/>
       </div>
       <div className="intro_info-header-container">
+        <img src={ProfilePic} alt="" className="intro_info-profile-pic" />
         <h1 className="intro_info-header" >
           Full Stack Developer
         </h1>
@@ -34,7 +35,7 @@ export default function Intro() {
           I have an obsession! I really love everything about technology; From the blockchain to robotics, there isn't much more I need to hear then amazing things technology can do for the world; I am passionate about building tools and solutions to solve real world problems; Software is the magic of our time. Lets Build!
          </p>
      
-           <img src={ProfilePic} alt="" className="intro_bio-profile-pic" />
+         
         </div>
       
       <div className="intro_bio-contact-nav">

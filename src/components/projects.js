@@ -2,7 +2,6 @@ import React from "react";
 import NaturePhoto from '../assets/img/NatureScreenShot.jpg';
 import TrelloPhoto from '../assets/img/Trello.jpg';
 import InProgress from '../assets/img/InProgress.jpg';
-import  {Link} from 'react-router-dom';
 import Github from '../Icons/Github';
 import Live from '../Icons/Globe';
 

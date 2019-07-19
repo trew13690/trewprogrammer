@@ -2,8 +2,8 @@
     text-align: center;
     &_info-header{
         &-container{
-         
-            margin-top: 16rem;
+            
+            margin-top: -12rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -65,13 +65,17 @@
 .header-3{
     text-align: center;
     margin: 2rem auto;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 3rem;
    
     color: white;
     text-transform: uppercase;
-    text-shadow: 0rem 1rem 1rem rbga(#000, 0.4);
+   text-shadow: 0rem 1rem 1rem rgba(#000, .4);
 
+}
+.header-3:hover{
+    transform: translateY(-1rem) scale(1.1);
+    transition: all .5s;
 }
 
 .header-4{

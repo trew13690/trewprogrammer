@@ -1,5 +1,5 @@
 .project-section {
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(226, 226, 226);
   margin-bottom: 2rem;
   padding: 2rem;
   height: 90vh;
@@ -46,7 +46,7 @@
       }
       &-img:hover {
         transition: all 0.3s;
-        transform: scale(1.1);
+        transform: scale(1.05);
       }
 
       &-description {
