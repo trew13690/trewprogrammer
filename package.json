@@ -9,7 +9,7 @@
     "svgr": "svgr -d src/Icons/ src/assets/SVG/",
     "bundle": "webpack --config webpack.config.js",
     "prestart": "yarn run bundle",
-    "start": "node "
+    "start": "prestart"
   },
   "dependencies": {
     "@babel/core": "^7.4.5",
