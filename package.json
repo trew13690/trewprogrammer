@@ -4,17 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-<<<<<<< HEAD
     "start": "webpack --config webpack.prod.js",
     "dev": "webpack-dev-server ",
     "svgr": "svgr -d src/Icons/ src/assets/SVG/",
     "start-dev": "webpack-dev-server --open --config webpack.dev.js"
-=======
-    "build": "webpack --config webpack.prod.js",
-    "dev": "webpack-dev-server ",
-    "svgr": "svgr -d src/Icons/ src/assets/SVG/",
-    "start": "webpack-dev-server --open --config webpack.dev.js"
->>>>>>> dev
   },
   "dependencies": {
     "@babel/core": "^7.4.5",
@@ -40,7 +33,6 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
-<<<<<<< HEAD
     "webpack-dev-server": "^3.7.2",
     "clean-webpack-plugin": "^3.0.0",
     "webpack-merge": "^4.2.1"
@@ -48,13 +40,3 @@
   "devDependencies": {},
   "proxy": "http://localhost:8080"
 }
-=======
-    "webpack-dev-server": "^3.7.2"
-  },
-  "devDependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "webpack-merge": "^4.2.1"
-  },
-  "proxy": "http://localhost:8080"
-}
->>>>>>> dev

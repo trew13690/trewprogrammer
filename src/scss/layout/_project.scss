@@ -2,17 +2,23 @@
   background-color: rgb(226, 226, 226);
   margin-bottom: 2rem;
   padding: 2rem;
-  height: 90vh;
-  width: auto;
 
+  width: auto;
+  @media screen and (max-width: $bp-largest) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
   &_container {
     display: flex;
-    margin-top: 5rem;
-    justify-content: space-between;
 
+    justify-content: space-between;
+    @media screen and (max-width: $bp-largest) {
+      flex-direction: column;
+    }
     &-project {
       margin: 5rem 4rem;
-      height: 66vh;
+
       display: flex;
       flex-direction: column;
       border: 1px solid rgba(#000, 0.5);
@@ -28,7 +34,7 @@
         flex-direction: column-reverse;
         align-items: center;
         width: 100%;
-        margin: 4rem auto;
+        margin: 0rem auto;
       }
       &-buttonContainer {
         display: flex;
@@ -39,10 +45,18 @@
       }
 
       &-img {
-        max-height: 250px;
-        background-size: cover;
+        max-width: 100%;
+        max-height: auto;
+        padding: 2rem;
+        opacity: .9;
         margin: 2rem 2rem;
+        background-size: cover;
         box-shadow: 0rem 1rem 1rem rgba(#000, 0.1);
+
+        @media screen and(max-width: $bp-small) {
+        }
+          @media screen and(max-width: $bp-smallest){
+        }
       }
       &-img:hover {
         transition: all 0.3s;
@@ -55,7 +69,11 @@
         text-align: center;
         margin: 3rem 1rem;
         color: white;
-        line-height:3rem;
+        line-height: 3rem;
+
+          @media screen and(max-width: $bp-small){
+            font-size: 1.4rem;
+        }
       }
 
       &-button {

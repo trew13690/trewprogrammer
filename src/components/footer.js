@@ -10,7 +10,7 @@ export default function footer(){
 
         <div  className="footer">
         <div className="footer-container">
-        <small className="text-muted footer-copyright">Alex Trew;  TrewDev &copy; Version 1.0.0</small>
+        <small className="text-muted footer-copyright">Alex Trew;  TrewDev &copy; Version 1.0.4</small>
         <div className="footer-logo">
             <img src={Logo} alt="" className="footer-logo-image"/>
         </div>

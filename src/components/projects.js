@@ -57,7 +57,7 @@ export default function Projects() {
           </div>
           <div className="project-section_container-project">
            <div className="project-section_container-project-top">
-            <img src={InProgress} alt="" className="project-section_container-project-img"/>
+            <img src={InProgress} alt="" className="project-section_container-project-img" style={{maxHeight: '900px'}}/>
               <h4 className="header-4">
                 Ark Tribe Manager
               </h4>

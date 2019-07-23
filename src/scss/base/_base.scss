@@ -1,4 +1,14 @@
+
+
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-med: 56.75em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
+
 *{
+
     margin: 0;
     padding: 0;
 }
@@ -11,7 +21,9 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
-
+    @media only screen and(max-width: $bp-large){
+        font-size: 50%;
+    }
 }
 
 body {
@@ -20,9 +32,9 @@ font-family: 'Cormorant Garamond', serif;
     line-height: 1.6rem;
     min-height: 100vh;
     background-color: black;
-    
-
-}
-.root{
     margin: 0rem 1rem;
+    @media only screen and(max-width: $bp-largest){
+        margin: 0rem 0rem;
+        max-width: 100%;
+    }
 }

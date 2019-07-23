@@ -1,27 +1,23 @@
-  @keyframes jiggle {
-    10%, 90%{
-      transform: translate3d(-.5rem, 0, 0) scale(1);
-    }
-    20%, 80%{
-      transform: translate3d(1rem, 0,0) scale(1.3);
-    }
-    30%, 50%, 70%{
-      transform: translate3d(-2rem, 0,0) scale(1.0);
-    }
-    40%, 60%{
-  transform: translate3d(2rem, 0,0) scale(1.3);
-    }
-  }
 .skills {
   background-image: linear-gradient(0deg , var(--primary-dark),30%, var(--primary-color));
   height: 85vh;
   margin-top: -1rem;
   display: flex;
   flex-direction: column;
+ 
+  @media screen and(max-width: $bp-largest){
+    height: 102vh;
+    margin-top: -3rem;
 
+  }
+  @media screen and (max-width: $bp-med){
+    height: 80vh;
+  }
+  @media screen and(max-width: $bp-small){
+    height: 130vh;
+  }
   &_heading {
     font-size: 6rem;
-    
     font-weight: 300;
     text-align: center;
     line-height: 4rem;
@@ -31,9 +27,21 @@
     color: white;
     text-shadow: 0rem 2rem 2rem rgba($color: #000000, $alpha: .9);
     transition: all .5s;
+     @media screen and (max-width: $bp-largest){
+      font-size: 5rem;
+    }
+    @media screen and(max-width: $bp-small){
+      font-size: 4rem;
+    }
+      @media screen and(max-width: $bp-smallest){
+            font-size: 3rem;
+            margin-bottom: .5rem;
+            padding: 0rem;
+        }
   }
   &_heading:hover{
     transform: scale(1.1) translateY(-1rem);
+   
     
   }
 
@@ -42,6 +50,10 @@
       margin-bottom: 4rem;
       display: flex;
       justify-content: space-around;
+
+      @media screen and(max-width: $bp-small){
+        flex-direction: column;
+      }
   }
 
   &-skill-box {
@@ -57,6 +69,18 @@
     box-shadow: 0rem 1rem 2rem rgba(#000, 0.2);
     border-radius: 20px;
    
+    @media screen and(max-width: $bp-small){
+     height: initial;
+     width: initial;
+    }
+      @media screen and(max-width: $bp-smallest){
+            margin-top: 1.0rem;
+        }
+    &-icon {
+      @media screen and(max-width: $bp-small){
+transform: scale(.6);
+      }
+    }
   &-star:hover  {
    
     text-shadow: 0rem 1rem 1rem #000;
@@ -72,12 +96,15 @@
     
     &-type {
         display: flex;
-       
-    
         margin-left: 2rem;
         margin-bottom: 1rem;
         flex: 0 1 30%;
          transition: all .8s;
+
+         @media screen and (max-width: $bp-largest){
+           margin-right: 10rem;
+          line-height: 3rem;
+         }
     }
     &-type:hover{
       transform: translateY(-1rem) translateX(2rem) scale(1.1);
@@ -100,9 +127,11 @@
         font-weight: 500;
         text-transform: uppercase;
         margin: 1.5rem 1rem;
-       
         text-shadow: 0rem 1rem 1rem rgba(#000, .2);
         transition: all .8s;
+        @media screen and(max-width: $bp-small){
+          font-size: 2.0rem;
+        }
     }
   }
 }
