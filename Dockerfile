@@ -5,11 +5,7 @@ WORKDIR /app/src
 COPY package.json yarn.lock ./
 RUN yarn 
 COPY . ./
-<<<<<<< HEAD
 RUN yarn start
-=======
-RUN yarn build
->>>>>>> dev
 RUN cd ./dist && ls 
 
 FROM nginx:latest 

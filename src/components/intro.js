@@ -4,12 +4,13 @@ import ProfilePic from '../assets/img/Profile.jpg';
 import TwitterIcon from '../Icons/Twitter';
 import EmailIcon from '../Icons/Envelope';
 import GithubIcon from '../Icons/Github';
+import BannerVideo from "../assets/video/working.mp4";
 export default function Intro() {
   return (
     <div className="intro">
     <div className="intro_video">
-    <video className="intro_video-content" autoPlay='true' muted loop>
-        <source src="./src/assets/video/working.mp4" type="video/mp4"/>
+    <video className="intro_video-content" autoPlay={true} muted loop>
+        <source src={BannerVideo} type="video/mp4"/>
     </video>
     </div>
       <div className="intro_info">
