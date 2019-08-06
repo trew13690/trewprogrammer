@@ -13,11 +13,10 @@ export default function Intro() {
         </div>
       </div>
       <div className="intro_info-name">
-            <h1 className="header1">Full Stack Developer</h1>
-          <h3 className="header2">Building Solutions!</h3>
+            <h1 className="header1">Alexandre Trew |Full Stack Developer</h1>
+          <h2 className="header2">Seattle WA</h2>
       </div>
       <div className="intro_bio">
-        <h3 className="header3">Alexandre Trew</h3>
         <div className="intro_bio-main">
           <p className="intro_bio-text">
         Hi! You want to know who I am; I am the kind of person who never gives up. No matter what the problems are ,  no matter the issue, I always and will continue to solve the problem. If I don't know how to solve the problem, I learn what is missing. My biggest skill isn't programming or solving problems. My biggest skill is my resolve. Nothing stop me from reaching my goals; </p> 

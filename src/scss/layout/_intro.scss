@@ -27,8 +27,8 @@
  
   &_info {
 
-    grid-column: span 1;
-    grid-row: span 1;
+    grid-column: 1 / span 1;
+    grid-row: 1/ span 2;
  
   @media screen and (max-width: $bp-largest) {
   }
@@ -38,9 +38,10 @@
 
   &-profile-pic {
    
-    width: 70%;
-    margin-top: 2rem;  
-  
+    max-width: 100%;
+    margin-top: 18rem;  
+    margin-left: 2rem;
+    border-radius: 20%;
  
    
     @media screen and(max-width: $bp-largest) {
@@ -91,8 +92,8 @@
   // BIO
 
   &_bio {
-    grid-column: span 2;
-
+    grid-column: 2 / span 1;
+    margin: -7rem 4rem;
     @media screen and (max-width: $bp-med) {
       padding: 0rem;
       margin-bottom: 4rem;
