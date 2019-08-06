@@ -1,166 +1,146 @@
 .intro {
-  margin: 1rem auto;
-  align-items: stretch;
-  justify-content: space-between;
-  min-height: 85vh;
-  position: relative;
-  display: flex;
+  min-height: 95vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  grid-template-rows: 1fr 1fr;
 
   @media screen and(max-width: $bp-largest) {
-    display: flex;
     justify-content: center;
     max-width: 100%;
     margin: 0rem;
     min-height: 50vh;
   }
-  @media screen and(max-width:$bp-large){
+  @media screen and(max-width:$bp-large) {
     min-height: 46vh;
   }
-  @media screen  and(max-width:$bp-med){
+  @media screen and(max-width:$bp-med) {
     min-height: 38vh;
   }
-  @media screen and(max-width: $bp-small){
+  @media screen and(max-width: $bp-small) {
     padding: 0rem;
     margin-top: 0rem;
   }
-     @media screen and(max-width: $bp-smallest){
-        padding: 0rem;
-        
-      }
+  @media screen and(max-width: $bp-smallest) {
+    padding: 0rem;
+  }
+ 
   &_info {
-    display: flex;
-    margin-top: 10rem;
-    align-items: center;
-    flex-direction: column;
-    flex: 1 1 50%;
-    padding: 5rem;
 
-    @media screen and (max-width: $bp-largest){
-      flex-direction: row;
-    
+    grid-column: span 1;
+    grid-row: span 1;
+ 
+  @media screen and (max-width: $bp-largest) {
+  }
+  @media screen and (max-width: $bp-med) {
+    padding: 0rem;
+  }
+
+  &-profile-pic {
+   
+    width: 70%;
+    margin-top: 2rem;  
+  
+ 
+   
+    @media screen and(max-width: $bp-largest) {
+      width: 20rem;
+      height: 20rem;
     }
-    @media screen and (max-width: $bp-med){
-      padding: 0rem;
-    }
-
-       &-profile-pic {
-      width: 30rem;
-      height: 30rem;
-      border: none;
-      border-radius: 50%;
-      margin-bottom: .5rem;
-
-      @media screen and(max-width: $bp-largest){
-        width: 20rem;
-        height: 20rem;
-
-      }
-      @media screen and(max-width: $bp-small){
-        width: 10rem;
-        height: 10rem;
-      }
-
-     
-    }
-    &-profile-pic:hover{
-      transform: translateY(-1rem);
-      transition: all .3s;
-    }
-
-    &-logo {
-      margin-top: 2rem;
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-left: 2rem;
-     
-    }
-    &-logo img {
-      height: 10rem;
+    @media screen and(max-width: $bp-small) {
       width: 10rem;
-       @media screen and (max-width: $bp-small){
-        height: 5rem;
-        width: 5rem;
-      }
-    }
-    &-logo:hover img{
-     
-      transition: all .3s;
-      transform: translateY(-.5rem) scale(1.1);
+      height: 10rem;
     }
   }
-  &_video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.9;
-    overflow: hidden;
-    &-content {
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-    }
+
+  &-name{
+    justify-self: center;
+    align-self: center;
+    line-height: 5rem;
   }
+
+
+  &-profile-pic:hover {
+    transform: translateY(-1rem);
+    transition: all 0.3s;
+  }
+  }
+  // &_video {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   height: 100%;
+  //   width: 100%;
+  //   z-index: -1;
+  //   opacity: 0.9;
+  //   overflow: hidden;
+  //   &-content {
+  //     min-width: 100%;
+  //     min-height: 100%;
+  //     width: auto;
+  //     height: auto;
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 50%;
+  //     transform: translate(-50%, -50%);
+  //     object-fit: cover;
+  //   }
+  // }
 
   ////////////////////////////////////
   // BIO
 
   &_bio {
-    display: flex;
-    flex-direction: column;
-    padding: 6rem;
-    flex: 0 0 60%;
-    margin-top: 15rem;
+    grid-column: span 2;
 
-    @media screen and (max-width: $bp-med){
+    @media screen and (max-width: $bp-med) {
       padding: 0rem;
       margin-bottom: 4rem;
     }
-     @media screen and(max-width: $bp-small){
-    padding: 0rem;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-  }
-    &-main {
-      display: flex;
+    @media screen and(max-width: $bp-small) {
+      padding: 0rem;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
     }
+    &-main{
+      margin-top: 3rem;
+      
+     
+    }
+     &-text  {
+       
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 4rem;
+        margin: 4rem 3.5rem;
+      }
 
-
-    
     &-contact-nav {
       list-style: none;
-      display: flex;
       justify-content: space-evenly;
       margin-top: 4rem;
-  
-      @media screen and (max-width: $bp-small){
+      display: flex; 
+
+      @media screen and (max-width: $bp-small) {
         margin-top: 3rem;
         margin-bottom: 3rem;
-      } 
-       @media screen and(max-width: $bp-smallest){
-        transform: scale(.7);
+      }
+      @media screen and(max-width: $bp-smallest) {
+        transform: scale(0.7);
         margin-bottom: 2.1rem;
-        margin-top:1rem;
-    }
-   
+        margin-top: 1rem;
+      }
+
+      
       &-icon {
         fill: black;
-        transition: all .3s;
-        
-        &:hover{
+        transition: all 0.3s;
+       
+        &:hover {
           transform: translateY(-1rem) scale(1.3);
-
         }
       }
     }
   }
-}
+  }
+
