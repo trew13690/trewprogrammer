@@ -1,7 +1,8 @@
 import React from "react";
 import ProfilePic from "../assets/img/Profile.jpg";
-import TwitterIcon from "../Icons/Twitter";
 import EmailIcon from "../Icons/Envelope";
+import GitLabIcon from '../Icons/Gitlab';
+import LinkedInIcon from '../Icons/LinkedinSquare';
 import GithubIcon from "../Icons/Github";
 export default function Intro() {
   return (
@@ -13,13 +14,13 @@ export default function Intro() {
         </div>
       </div>
       <div className="intro_info-name">
-            <h1 className="header1">Alexandre Trew |Full Stack Developer</h1>
+            <h1 className="header1">Alexandre Trew | Full Stack Developer</h1>
           <h2 className="header2">Seattle WA</h2>
       </div>
       <div className="intro_bio">
         <div className="intro_bio-main">
           <p className="intro_bio-text">
-        Hi! You want to know who I am; I am the kind of person who never gives up. No matter what the problems are ,  no matter the issue, I always and will continue to solve the problem. If I don't know how to solve the problem, I learn what is missing. My biggest skill isn't programming or solving problems. My biggest skill is my resolve. Nothing stop me from reaching my goals; </p> 
+        Hi! You want to know who I am; I am the kind of person who never gives up. No matter what the problems are ,  no matter the issue, I always and will continue to solve the problem. If I don't know how to solve the problem, I learn what is missing. My biggest skill isn't just programming or solving problems. My biggest skill is my resolve. Nothing stop me from reaching my goals; </p> 
         <p className="intro_bio-text">I am thirsty for knowledge and I spend all my free time learning more about technology, let it be project management to compiler design. I will push myself to be more productive, efficent, and creative in my thoughts and actions everyday. 
         This is who I am. 
           </p>
@@ -27,12 +28,20 @@ export default function Intro() {
 
         <div className="intro_bio-contact-nav">
           <li className="intro_contact-nav-list">
-            <a href="https://twitter.com/trewred" target="_blank">
-              <TwitterIcon
+            <a href="https://gitlab.com/redtrew" target="_blank">
+              <GitLabIcon
                 width="30"
                 height="30"
                 className="intro_bio-contact-nav-icon"
               />
+            </a>
+          </li>
+          <li className="intro_contact-nav-list">
+            <a href="https://www.linkedin.com/in/alextrew/" target="_blank">
+              <LinkedInIcon
+              widht="30"
+              height="30"
+              className="intro_bio-contact-nav-icon"/>
             </a>
           </li>
           <li className="intro_contact-nav-list">

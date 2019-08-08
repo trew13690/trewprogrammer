@@ -11,163 +11,48 @@ import IconDocker from "../Icons/Docker";
 import IconDjango from "../Icons/Django";
 import IconGit from "../Icons/Git";
 import IconPostGres from "../Icons/Postgresql";
+
+import { BarChart } from "react-chartkick";
+import "chart.js";
+
 export default function Skills() {
   return (
     <div className="skills">
-      <h4 className="skills_heading">Skills</h4>
-      <div className="skills_sub-container">
-        <div className="skills-skill-box">
-          <div className="skills-skill-box--list-skill">
-            <div className="skills-skill-box-type">
-              <IconHtml className="skills-skill-box-icon" />
-              <p className="skills-skill-box--text">Html</p>
-            </div>
-
-            <div className="skills-skill-box-level">
-              <div className="skills-skill-box-star">
-                <IconStar />
-                <IconStar />
-                <IconStar />
-              </div>
-            </div>
-          </div>
-
-          <div className="skills-skill-box--list-skill">
-            <div className="skills-skill-box-type">
-              <IconSass className="skills-skill-box-icon" />
-              <p className="skills-skill-box--text">Sass</p>
-            </div>
-
-            <div className="skills-skill-box-level">
-              <div className="skills-skill-box-star">
-                <IconStar />
-                <IconStar />
-              </div>
-            </div>
-          </div>
-
-          <div className="skills-skill-box--list-skill">
-            <div className="skills-skill-box-type">
-              <IconJavascript className="skills-skill-box-icon" />
-              <p className="skills-skill-box--text">Javascript</p>
-            </div>
-
-            <div className="skills-skill-box-level">
-              <div className="skills-skill-box-star">
-                <IconStar />
-                <IconStar />
-                <IconStar />
-              </div>
-            </div>
-          </div>
-
-          <div className="skills-skill-box--list-skill">
-            <div className="skills-skill-box-type">
-              <IconJava className="skills-skill-box-icon" />
-              <p className="skills-skill-box--text">Java</p>
-            </div>
-
-            <div className="skills-skill-box-level">
-              <div className="skills-skill-box-star">
-                <IconStar />
-                <IconStar />
-                <IconStar />
-              </div>
-            </div>
-          </div>
-
-          <div className="skills-skill-box--list-skill">
-            <div className="skills-skill-box-type">
-              <IconPython className="skills-skill-box-icon" />
-              <p className="skills-skill-box--text">Python</p>
-            </div>
-
-            <div className="skills-skill-box-level">
-              <div className="skills-skill-box-star">
-                <IconStar />
-                <IconStar />
-                <IconStar />
-                <IconStar />
-              </div>
-            </div>
-          </div>
+      <div className="skills-top">
+        <h2 className="header2 skills-header">Skills</h2>
+        <div className="skills-filter">
+          <button className="skills-button">Languages</button>
+          <button className="skills-button">Framework</button>
+          <button className="skills-button">DB</button>
+          <button className="skills-button">Tools and Management</button>
         </div>
+      </div>
 
-        {/* Second Skill Box */}
-
-        <div className="skills-skill-box">
-          <div className="skills-skill-box--list-skill">
-            <div className="skills-skill-box-type">
-              <IconReact className="skills-skill-box-icon" />
-              <p className="skills-skill-box--text">React</p>
-            </div>
-
-            <div className="skills-skill-box-level">
-              <div className="skills-skill-box-star">
-                <IconStar />
-                <IconStar />
-                <IconStar />
-              </div>
-            </div>
+      <div className="skills-skill-box">
+        <div className="skills-skill-box-paper">
+          <h3 className="skills-header">Languages</h3>
+          <div className="skills-skill-box_skill-icon">
+            <IconHtml />
+            <IconSass />
+            <IconJavascript />
+            <IconJava />
+            <IconPython />
           </div>
-
-          <div className="skills-skill-box--list-skill">
-            <div className="skills-skill-box-type">
-              <IconDjango className="skills-skill-box-icon" />
-              <p className="skills-skill-box--text">Django</p>
-            </div>
-
-            <div className="skills-skill-box-level">
-              <div className="skills-skill-box-star">
-                <IconStar />
-                <IconStar />
-              </div>
-            </div>
-          </div>
-
-          <div className="skills-skill-box--list-skill">
-            <div className="skills-skill-box-type">
-              <IconGit className="skills-skill-box-icon" />
-              <p className="skills-skill-box--text">Git and Bash</p>
-            </div>
-
-            <div className="skills-skill-box-level">
-              <div className="skills-skill-box-star">
-                <IconStar />
-                <IconStar />
-                <IconStar />
-                <IconStar />
-              </div>
-            </div>
-          </div>
-
-          <div className="skills-skill-box--list-skill">
-            <div className="skills-skill-box-type">
-              <IconPostGres className="skills-skill-box-icon" />
-              <p className="skills-skill-box--text">Postgresql</p>
-            </div>
-
-            <div className="skills-skill-box-level">
-              <div className="skills-skill-box-star">
-                <IconStar />
-                <IconStar />
-                <IconStar />
-              </div>
-            </div>
-          </div>
-
-          <div className="skills-skill-box--list-skill">
-            <div className="skills-skill-box-type">
-              <IconDocker className="skills-skill-box-icon" />
-              <p className="skills-skill-box--text">Docker</p>
-            </div>
-
-            <div className="skills-skill-box-level">
-              <div className="skills-skill-box-star">
-                <IconStar />
-                <IconStar />
-              </div>
-            </div>
+          <div className="skills-skill-box_level">
+            <BarChart
+            responsive={true}
+              colors={["#921111"]}
+              height="635px"
+              discrete={true}
+              style={{paddingBottom: '2rem'}}
+              data={[
+                ["Html", 3],
+                ["SCSS", 2],
+                ["Javascript", 3],
+                ["Java", 4],
+                ["Python", 4]
+              ]}
+            />
           </div>
         </div>
       </div>
