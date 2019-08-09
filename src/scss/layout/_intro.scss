@@ -5,6 +5,7 @@
   grid-gap: 20px;
   grid-template-rows: 1fr 1fr;
 
+
   @media screen and(max-width: $bp-largest) {
     justify-content: center;
     max-width: 100%;
@@ -24,7 +25,11 @@
   @media screen and(max-width: $bp-smallest) {
     padding: 0rem;
   }
- 
+ &-button:active,
+ &-button:focus{
+      outline: 0;
+
+    }
   &_info {
 
     grid-column: 1 / span 1;
@@ -58,7 +63,16 @@
     justify-self: center;
     align-self: center;
     line-height: 5rem;
+    display: grid;
+
+    & a{
+      justify-self: center;
+      align-self: center;
+      margin-top: 5rem;
+    }
+    
   }
+  
 
 
   &-profile-pic:hover {

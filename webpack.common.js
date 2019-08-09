@@ -36,13 +36,17 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"]
+        test: /\.(pdf|png|svg|jpg|gif)$/,
+        use: 'file-loader?name=[path][name].[ext]',
+        
+
+        
       },
       {
         test: /\.mp4$/,
         use: 'file-loader?name=videos/[name].[ext]',
-      }
+      },
+    
   
     ]
   },

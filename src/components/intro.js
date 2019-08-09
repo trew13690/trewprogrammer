@@ -4,6 +4,7 @@ import EmailIcon from "../Icons/Envelope";
 import GitLabIcon from '../Icons/Gitlab';
 import LinkedInIcon from '../Icons/LinkedinSquare';
 import GithubIcon from "../Icons/Github";
+import Resume from '../assets/AlexandreTrewResumeOffical.pdf';
 export default function Intro() {
   return (
     <div className="intro">
@@ -14,8 +15,9 @@ export default function Intro() {
         </div>
       </div>
       <div className="intro_info-name">
-            <h1 className="header1">Alexandre Trew | Full Stack Developer</h1>
+            <h1 className="header1">Alexandre Trew |  Full Stack Developer</h1>
           <h2 className="header2">Seattle WA</h2>
+          <a href={Resume} download><button class="skills-button intro-button ">Resume</button></a>
       </div>
       <div className="intro_bio">
         <div className="intro_bio-main">

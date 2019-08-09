@@ -5,13 +5,46 @@ import TrelloPhoto from "../assets/img/Trello.jpg";
 import InProgress from "../assets/img/In-progress.jpg";
 import Github from "../Icons/Github";
 import Live from "../Icons/Globe";
+import Gitlab from '../Icons/Gitlab';
+
+
+const InProgressIcon = (codeLink, inprogress) => {
+
+    if (inprogress =="arkmin"){
+      return(
+      <React.Fragment>
+      <a href={codeLink} target="_blank">
+      <Gitlab
+      fill="#000"
+      width="25"
+      height="25"
+      className="project-section-project-button"/></a>
+      </React.Fragment>
+      )
+    }
+    else{
+      return(
+      <React.Fragment>
+      <a href={codeLink} target="_blank">
+        <Github
+          fill="#000"
+          width="25"
+          height="25"
+          className="project-section-project-button"
+        />
+      </a>
+      </React.Fragment>
+      )
+    }
+};
 
 const project = (
   img,
   projectTitle,
   projectDescription,
   projectLink,
-  codeLink
+  codeLink,
+  inprogress,
 ) => {
   return (
     <React.Fragment>
@@ -33,15 +66,8 @@ const project = (
               className="project-section-project-button"
             />
           </a>
-
-          <a href={codeLink} target="_blank">
-            <Github
-              fill="#000"
-              width="25"
-              height="25"
-              className="project-section-project-button"
-            />
-          </a>
+        
+         {InProgressIcon(codeLink, inprogress)}
         </div>
       </div>
     </React.Fragment>
@@ -58,7 +84,7 @@ export default function Projects() {
           NaturePhoto,
           "Nature",
           "Demo using Sass",
-          "",
+          "http://167.71.127.182",
           "https://github.com/trew13690/NaturePortfolioSample"
         )}
 
@@ -66,15 +92,16 @@ export default function Projects() {
           TrelloPhoto,
           "Trello",
           "Demo using Flexbox",
-          "",
+          "http://167.71.127.150",
           "https://github.com/trew13690/Trello"
         )}
         {project(
           InProgress,
           "ArkMin",
           "In Progress - Ark Tribe Manager for the game Ark Survival",
-          "",
-          ""
+          "http://167.71.123.192",
+          "https://gitlab.com/oculus-animi/core-dev/arktribeclient",
+          "arkmin"
         )}
       </div>
       </div>
