@@ -1,9 +1,9 @@
 .skills {
-  height: 100vh;
+  // height: 100vh;
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr .5fr;
   background-color: rgb(221, 221, 221);
 
   @media screen and(max-width: $bp-largest) {
@@ -18,57 +18,105 @@
   }
 
   &-top {
-    grid-column: span 4;
+    grid-column:  2 / span 1;
     justify-self: center;
     align-self: center;
-    margin-top: -17rem;
+   
   }
 
-  &-header {
-    font-size: 3rem;
-    font-weight: 00;
-    line-height: 2rem;
-    justify-self: center;
-    margin-top: 4rem;
+  &-header{
+    margin-bottom: 8rem;
+    font-size: 4.5rem;
+    font-weight: 400;
   }
   &-filter {
     margin-top: 2rem;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
+   
   }
   &-button {
     justify-content: space-evenly;
-  }
+      -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+      -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+      box-shadow:inset 1px 1px 0px 0px #ffffff;
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+      background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+      background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+      background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+      background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+      background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+      background-color:#ffffff;
+      -moz-border-radius:22px;
+      -webkit-border-radius:22px;
+      border-radius:22px;
+      border:1px solid #dcdcdc;
+      display:inline-block;
+      cursor:pointer;
+      color:#666666;
+      font-family:Times New Roman;
+      font-size:18px;
+      font-weight:bold;
+      font-style:italic;
+      padding:13px 59px;
+      text-decoration:none;
+      text-shadow:0px 0px 0px #ffffff;
+    }
+    &-button:hover {
+      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+      background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+      background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+      background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+      background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+      background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+      background-color:#f6f6f6;
+    }
+    &-button:active {
+      position:relative;
+      top:1px;
+    }
+    
+  
 
   &-skill-box {
-    height: 70vh;
+
     background-color: #fff;
-    grid-column: 1 / span 3;
+    grid-column: 2 / span 1;
     grid-row: 2 / span 2;
-    margin: 0rem 3rem;
-    border-radius: 2%;
-    display: grid;
     grid-template-columns: 1fr;
+    border-radius: 2%;
+  
+    
+    
 
     &-paper {
-      grid-column: span 2;
+      
       display: grid;
+      grid-template-columns: .1fr 2fr;
+      align-items: start;
+      
+
       box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
       margin: 2rem 4rem;
-
-      grid-template-columns: 1fr 1fr 6fr;
-
-      align-items: start;
+     
     }
     &_skill {
       grid-column: span 1;
     }
     &_level {
-      grid-column: 3 / span 1;
+      display: grid;
+      grid-column: 2 / span 1;
+      align-items: center;
+      grid-template-columns: .2fr 1fr;
+
+
       margin: 1rem 3rem;
       height: 100%;
       margin-top: 0rem;
+     
 
     }
     &_skill-icon {
@@ -80,6 +128,16 @@
       align-self: stretch;
       align-items: center;
       margin: 0rem 2rem;
+      margin-bottom: -8rem;
+    }
+    &_db-icons{
+      grid-template-rows: repeat(4,1fr);
+      margin-bottom: 3rem;
+    }
+
+    &_tools-icons{
+      grid-template-rows: repeat(8, 1fr);
+     margin-bottom: -5rem;
     }
 
     &--list-skill {
