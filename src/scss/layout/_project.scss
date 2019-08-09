@@ -1,88 +1,77 @@
 .project-section {
-  background-color: rgb(226, 226, 226);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   margin-bottom: 2rem;
   padding: 2rem;
+  max-height: 90vh;
 
-  width: auto;
   @media screen and (max-width: $bp-largest) {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
   }
-  &_container {
-    display: flex;
 
-    justify-content: space-between;
-    @media screen and (max-width: $bp-largest) {
-      flex-direction: column;
+  &-header {
+    grid-column: 3 / span 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  &-container {
+    display: grid;
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 3;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10rem;
+  }
+
+  &-project {
+    grid-row: span 1;
+    background-color: rgba(0, 0, 0, 0.09);
+    display: grid;
+    border-radius: 3%;
+    box-shadow: 0rem 1rem 5rem rgba(0,0,0, .5);
+
+    &-top {
     }
-    &-project {
-      margin: 5rem 4rem;
+    &-buttonContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+      margin: 2rem 0;
+    }
 
-      display: flex;
-      flex-direction: column;
-      border: 1px solid rgba(#000, 0.5);
-      box-shadow: 0rem 1rem 2rem rgba(#000, 0.3);
-      background-image: linear-gradient(
-        0deg,
-        var(--primary-color),
-        var(--primary-light)
-      );
+    &-img {
+      max-width: 450px;
+      min-height: 300px;
+      height: auto;
+      width: auto;
+      border-radius: 4%;
 
-      &-top {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        width: 100%;
-        margin: 0rem auto;
+      @media screen and(max-width: $bp-small) {
       }
-      &-buttonContainer {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 5rem;
-        justify-content: space-evenly;
+      @media screen and(max-width: $bp-smallest) {
       }
+    }
 
-      &-img {
-        max-width: 100%;
-        max-height: auto;
-        padding: 2rem;
-        opacity: .9;
-        margin: 2rem 2rem;
-        background-size: cover;
-        box-shadow: 0rem 1rem 1rem rgba(#000, 0.1);
+    &-description {
+      text-align: center;
+      font-size: 2rem;
+      margin: 2rem auto;
+      font-weight: 100;
 
-        @media screen and(max-width: $bp-small) {
-        }
-          @media screen and(max-width: $bp-smallest){
-        }
+      @media screen and(max-width: $bp-small) {
       }
-      &-img:hover {
-        transition: all 0.3s;
-        transform: scale(1.05);
-      }
+    }
 
-      &-description {
-        font-size: 2.5rem;
-        font-weight: 200;
-        text-align: center;
-        margin: 3rem 1rem;
-        color: white;
-        line-height: 3rem;
+    &-button {
+      transition: all 0.4s;
+    }
 
-          @media screen and(max-width: $bp-small){
-            font-size: 1.4rem;
-        }
-      }
-
-      &-button {
-        transition: all 0.8s;
-      }
-
-      &-button:hover {
-        transform: translateY(-1.1rem) scale(1.1);
-      }
+    &-button:hover {
+      transform: translateY(-1.1rem) scale(1.1);
     }
   }
 }
