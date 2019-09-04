@@ -84,7 +84,7 @@ export default function Projects() {
           NaturePhoto,
           "Nature",
           "Demo using Sass",
-          "http://167.71.127.182",
+          "https://nature-demo.herokuapp.com/",
           "https://github.com/trew13690/NaturePortfolioSample"
         )}
 
@@ -92,14 +92,14 @@ export default function Projects() {
           TrelloPhoto,
           "Trello",
           "Demo using Flexbox",
-          "http://167.71.127.150",
+          "https://demo-trello.herokuapp.com",
           "https://github.com/trew13690/Trello"
         )}
         {project(
           InProgress,
           "ArkMin",
           "In Progress - Ark Tribe Manager for the game Ark Survival",
-          "http://167.71.123.192",
+          "https://arkmin.herokuapp.com/",
           "https://gitlab.com/oculus-animi/core-dev/arktribeclient",
           "arkmin"
         )}
