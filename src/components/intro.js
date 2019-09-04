@@ -23,7 +23,7 @@ export default function Intro() {
         <div className="intro_bio-main">
           <p className="intro_bio-text">
         Hi! You want to know who I am; I am the kind of person who never gives up. No matter what the problems are ,  no matter the issue, I always and will continue to solve the problem. If I don't know how to solve the problem, I learn what is missing. My biggest skill isn't just programming or solving problems. My biggest skill is my resolve. Nothing stop me from reaching my goals; </p> 
-        <p className="intro_bio-text">I am thirsty for knowledge and I spend all my free time learning more about technology, let it be project management to compiler design. I will push myself to be more productive, efficent, and creative in my thoughts and actions everyday. 
+        <p className="intro_bio-text">I am thirsty for knowledge and I spend all my free time learning more about technology, let it be project management to compiler design. I will push myself to be more productive, efficient, and creative in my thoughts and actions everyday. 
         This is who I am. 
           </p>
         </div>
